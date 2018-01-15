@@ -1,0 +1,31 @@
+{
+    "name": "adamicky/message",
+    "description": "Message Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marek Adamicky",
+            "email": "marek.adamicky@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Adamicky\\Message\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adamicky\\Message\\MessageServiceProvider"
+            ],
+            "aliases": {
+                "Message": "Adamicky\\Message\\Facades\\Message"
+            }
+        }
+    }
+}
